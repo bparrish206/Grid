@@ -1,0 +1,16 @@
+def grid(x):
+    n = (x-3)/2
+    def hline():
+        print '+', n*'-', '+', n*'-', '+'
+    def vline():
+        print '|', n*' ', '|', n* ' ', '|'
+    hline()
+    for i in range(1,n+1):
+        vline()
+    hline()
+    for i in range(1,n+1):
+        vline()
+    hline()
+
+
+grid(9)
